@@ -1,0 +1,86 @@
+CAMERA_COUNT:	2
+CAMERA:
+{
+	FOV:	45.0 
+	NEAR:	0.5
+	FAR:	100.0
+	POS:	0.0 0.0 5.0
+	ROT:	0.0 0.0 0.0
+}
+CAMERA:
+{
+	FOV:	45.0 
+	NEAR:	0.5
+	FAR:	100.0
+	POS:	0.0 0.0 10.0
+	ROT:	0.0 0.0 0.0
+}
+
+LIGHT_COUNT: 2
+LIGHT:
+{
+	TYPE:	0
+	POS:	1.5 1.5 1.0
+	COL:	1.0 1.0 1.0
+	ATT:	1.0 0.5 0.2
+	PRIM:	0
+}
+
+LIGHT:
+{
+	TYPE:	0
+	POS:	-1.5 1.5 1.0
+	COL:	1.0 1.0 1.0
+	ATT:	1.0 0.5 0.2
+	PRIM:	0
+}
+
+
+PRIM_COUNT: 1
+PRIM: cube.obj
+{
+	SCALE:		0.05 0.05 0.05
+	SHADER_ID	1
+}
+
+MESH_COUNT: 3
+MESH: torus.obj
+{
+	NAME:		doughnut
+	POS:		1.0 0.0 1.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.0 0.1 0.1 
+	SCALE:		0.5 0.5 0.5
+	VEL:		0.0 0.0 0.0
+	SHADER_ID	4
+}
+MESH: torus.obj
+{
+	NAME:		doughnut
+	POS:		-1.0 0.0 1.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.0 0.2 0.2 
+	SCALE:		0.5 0.5 0.5
+	VEL:		0.0 0.0 0.0
+	SHADER_ID	4
+}
+MESH: plane.obj
+{
+	NAME:		plane
+	POS:		0.0 0.0 0.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.0 0.0 0.0
+	SCALE:		1.5 1.5 1.0
+	VEL:		0.0 0.0 0.0
+	SHADER_ID	3
+}
+
+HUD_COUNT: 0
+
+SHADER_COUNT: 6
+SHADER:	shaders/flat		VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/diffuse		VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/toon		VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/death		VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/gofaster	VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/Pulse		VERT_SHDR	FRAG_SHDR
